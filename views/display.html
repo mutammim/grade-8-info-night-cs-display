@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+      }
+
+      body {
+        background-color: black;
+        color: #fafafa;
+        transition: background-color 100ms ease-in-out;
+        font-family: "Nunito", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 3rem;
+      "
+    >
+      <h1 style="font-weight: 700; font-size: 3rem">[redacted] Computer 
+Science</h1>
+      <h2 style="font-weight: 600">Welcome to the Grade 8 Info Night!</h2>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      const socket = io();
+      const jsConfetti = new JSConfetti();
+
+      socket.on("refresh", () => {
+        location.reload();
+      });
+
+      socket.on("emoji", (emoji) => {
+        jsConfetti.addConfetti({
+          emojis: [emoji],
+        });
+      });
+
+      socket.on("color", (color) => {
+        console.log(color);
+        document.body.style.backgroundColor = color;
+      });
+
+      socket.on("font", (font) => {
+        console.log(font);
+        document.body.style.fontFamily = font;
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Nunito", sans-serif;
+      }
+
+      body {
+        background-color: black;
+      }
+
+      .color {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 3px solid white;
+      }
+
+      .emoji {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 3px solid white;
+      }
+
+      .font {
+        height: 50px;
+        border-radius: 100rem;
+        padding: 0.25rem 1rem;
+        border: 3px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="emojis"></div>
+
+    <div
+      style="
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+      "
+    >
+      <div
+        class="color"
+        data-color="#FB7185"
+        style="background-color: #fb7185"
+      ></div>
+
+      <div
+        class="color"
+        data-color="#f87171"
+        style="background-color: #f87171"
+      ></div>
+
+      <div
+        class="color"
+        data-color="#FB923C"
+        style="background-color: #fb923c"
+      ></div>
+
+      <div
+        class="color"
+        data-color="#FACC15"
+        style="background-color: #facc15"
+      ></div>
+
+      <div
+        class="color"
+        data-color="#A3E635"
+        style="background-color: #a3e635"
+      ></div>
+
+      <div
+        class="color"
+        data-color="#4ADE80"
+        style="background-color: #4ade80"
+      ></div>
+
+      <div
+        class="color"
+        data-color="#34D399"
+        style="background-color: #34d399"
+      ></div>
+
+      <div
+        class="color"
+        data-color="#2DD4BF"
+        style="background-color: #2dd4bf"
+      ></div>
+
+      <div
+        class="color"
+        data-color="#22D3EE"
+        style="background-color: #22d3ee"
+      ></div>
+
+      <div
+        class="color"
+        data-color="#38BDF8"
+        style="background-color: #38bdf8"
+      ></div>
+
+      <div
+        class="color"
+        data-color="#60A5FA"
+        style="background-color: #60a5fa"
+      ></div>
+
+      <div
+        class="color"
+        data-color="#818CF8"
+        style="background-color: #818cf8"
+      ></div>
+
+      <div
+        class="color"
+        data-color="#A78BFA"
+        style="background-color: #a78bfa"
+      ></div>
+
+      <div
+        class="color"
+        data-color="#C084FC"
+        style="background-color: #c084fc"
+      ></div>
+
+      <div
+        class="color"
+        data-color="#E879F9"
+        style="background-color: #e879f9"
+      ></div>
+
+      <div
+        class="color"
+        data-color="#F472B6"
+        style="background-color: #f472b6"
+      ></div>
+    </div>
+
+    <div
+      style="
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+      "
+    >
+      <div
+        class="emoji"
+        data-emoji="💻"
+        style="
+          background-color: #e2e8f0;
+          font-size: x-large;
+          text-align: center;
+          line-height: 50px;
+        "
+      >
+        💻
+      </div>
+
+      <div
+        class="emoji"
+        data-emoji="🏫"
+        style="
+          background-color: #e2e8f0;
+          font-size: x-large;
+          text-align: center;
+          line-height: 50px;
+        "
+      >
+        🏫
+      </div>
+
+      <div
+        class="emoji"
+        data-emoji="👋"
+        style="
+          background-color: #e2e8f0;
+          font-size: x-large;
+          text-align: center;
+          line-height: 50px;
+        "
+      >
+        👋
+      </div>
+
+      <div
+        class="emoji"
+        data-emoji="😄"
+        style="
+          background-color: #e2e8f0;
+          font-size: x-large;
+          text-align: center;
+          line-height: 50px;
+        "
+      >
+        😄
+      </div>
+
+      <div
+        class="emoji"
+        data-emoji="🎉"
+        style="
+          background-color: #e2e8f0;
+          font-size: x-large;
+          text-align: center;
+          line-height: 50px;
+        "
+      >
+        🎉
+      </div>
+
+      <div
+        class="emoji"
+        data-emoji="💯"
+        style="
+          background-color: #e2e8f0;
+          font-size: x-large;
+          text-align: center;
+          line-height: 50px;
+        "
+      >
+        💯
+      </div>
+
+      <div
+        class="emoji"
+        data-emoji="🦄"
+        style="
+          background-color: #e2e8f0;
+          font-size: x-large;
+          text-align: center;
+          line-height: 50px;
+        "
+      >
+        🦄
+      </div>
+
+      <div
+        class="emoji"
+        data-emoji="✨"
+        style="
+          background-color: #e2e8f0;
+          font-size: x-large;
+          text-align: center;
+          line-height: 50px;
+        "
+      >
+        ✨
+      </div>
+
+      <div
+        class="emoji"
+        data-emoji="❤️"
+        style="
+          background-color: #e2e8f0;
+          font-size: x-large;
+          text-align: center;
+          line-height: 50px;
+        "
+      >
+        ❤️
+      </div>
+
+      <div
+        class="emoji"
+        data-emoji="📱"
+        style="
+          background-color: #e2e8f0;
+          font-size: x-large;
+          text-align: center;
+          line-height: 50px;
+        "
+      >
+        📱
+      </div>
+
+      <div
+        class="emoji"
+        data-emoji="🧩"
+        style="
+          background-color: #e2e8f0;
+          font-size: x-large;
+          text-align: center;
+          line-height: 50px;
+        "
+      >
+        🧩
+      </div>
+
+      <div
+        class="emoji"
+        data-emoji="🖌️"
+        style="
+          background-color: #e2e8f0;
+          font-size: x-large;
+          text-align: center;
+          line-height: 50px;
+        "
+      >
+        🖌️
+      </div>
+
+      <div
+        class="emoji"
+        data-emoji="🖥️"
+        style="
+          background-color: #e2e8f0;
+          font-size: x-large;
+          text-align: center;
+          line-height: 50px;
+        "
+      >
+        🖥️
+      </div>
+
+      <div
+        class="emoji"
+        data-emoji="🎨"
+        style="
+          background-color: #e2e8f0;
+          font-size: x-large;
+          text-align: center;
+          line-height: 50px;
+        "
+      >
+        🎨
+      </div>
+
+      <div
+        class="emoji"
+        data-emoji="🎮"
+        style="
+          background-color: #e2e8f0;
+          font-size: x-large;
+          text-align: center;
+          line-height: 50px;
+        "
+      >
+        🎮
+      </div>
+
+      <div
+        class="emoji"
+        data-emoji="🤖"
+        style="
+          background-color: #e2e8f0;
+          font-size: x-large;
+          text-align: center;
+          line-height: 50px;
+        "
+      >
+        🤖
+      </div>
+
+      <div
+        class="emoji"
+        data-emoji="🦅"
+        style="
+          background-color: #e2e8f0;
+          font-size: x-large;
+          text-align: center;
+          line-height: 50px;
+        "
+      >
+        🦅
+      </div>
+    </div>
+
+    <div
+      style="
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+      "
+    >
+      <div
+        class="font"
+        data-font="Nunito"
+        style="
+          background-color: #e2e8f0;
+          font-family: 'Nunito';
+          font-size: x-large;
+          text-align: center;
+          line-height: 50px;
+        "
+      >
+        Nunito
+      </div>
+
+      <div
+        class="font"
+        data-font="IBM Plex Serif"
+        style="
+          background-color: #e2e8f0;
+          font-family: 'IBM Plex Serif';
+          font-size: x-large;
+          text-align: center;
+          line-height: 50px;
+        "
+      >
+        IBM Plex Serif
+      </div>
+
+      <div
+        class="font"
+        data-font="Space Grotesk"
+        style="
+          background-color: #e2e8f0;
+          font-family: 'Space Grotesk';
+          font-size: x-large;
+          text-align: center;
+          line-height: 50px;
+        "
+      >
+        Space Grotesk
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      const socket = io();
+
+      socket.emit("font", "test");
+
+      // EMOJI
+
+      const emojis = document.getElementsByClassName("emoji");
+
+      for (let i = 0; i < emojis.length; i++) {
+        emojis[i].addEventListener("click", function () {
+          socket.emit("emoji", this.dataset.emoji);
+        });
+      }
+
+      // FONTS
+
+      const fonts = document.getElementsByClassName("font");
+
+      for (let i = 0; i < fonts.length; i++) {
+        fonts[i].addEventListener("click", function () {
+          socket.emit("font", this.dataset.font);
+        });
+      }
+
+      // COLORS
+
+      const colors = document.getElementsByClassName("color");
+      for (let i = 0; i < colors.length; i++) {
+        const element = colors[i];
+
+        element.addEventListener("click", function () {
+          const { color } = this.dataset;
+
+          socket.emit("color", color);
+        });
+      }
+    </script>
+  </body>
+</html>
