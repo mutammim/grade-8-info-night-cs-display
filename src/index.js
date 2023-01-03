@@ -22,14 +22,15 @@ io.on("connection", (socket) => {
     socket.broadcast.emit("color", selectedColor);
   });
 
-  socket.on("font", (selectedFont) => {
-    font = selectedFont;
-    socket.broadcast.emit("font", selectedFont);
-  });
+  // socket.on("font", (selectedFont) => {
+  //   font = selectedFont;
+  //   socket.broadcast.emit("font", selectedFont);
+  // });
 
   socket.on("refresh", () => {
     io.emit("refresh");
   });
+
 });
 
 app.get("/", (req, res) => {
@@ -39,6 +40,10 @@ app.get("/", (req, res) => {
 app.get("/display", (req, res) => {
   res.sendFile("display.html", { root: "./views" });
 });
+
+app.get("/qrcode.png", (req, res) => {
+	res.sendFile("qrcode.png", { root: "/" })
+})
 
 server.listen(3000, () => {
   console.log("listening on *:3000");
